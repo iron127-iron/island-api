@@ -1,0 +1,20 @@
+{
+  "name": "@iron-island/app-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@iron-island/shared": "workspace:*",
+    "@iron-island/database": "workspace:*",
+    "@iron-island/security-core": "workspace:*",
+    "hono": "^4.5.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.107.2"
+  }
+}
